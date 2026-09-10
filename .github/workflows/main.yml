@@ -34,7 +34,7 @@ jobs:
         run: npm run build
 
       - name: Copy app icon
-        run: cp 829C08C3-54FD-44CC-BEF6-D36344A65395.png dist/icon.png
+        run: cp icon.PNG dist/icon.png
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
