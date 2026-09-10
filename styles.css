@@ -1093,3 +1093,41 @@ select:focus-visible {
     border-radius: 18px 18px 12px 12px;
   }
 }
+/* iPhone：ToDo追加・編集ウィンドウを少し上寄りに */
+@media (max-width: 520px) {
+  .modal-backdrop {
+    align-items: center;
+    padding: 14px;
+    padding-bottom: 12vh;
+  }
+
+  .modal-card {
+    width: 100%;
+    max-width: 480px;
+    max-height: 82dvh;
+    border-radius: 18px;
+  }
+
+  .form-field {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-field input[type="date"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    -webkit-appearance: none;
+  
+    appearance: none;
+  }
+}
